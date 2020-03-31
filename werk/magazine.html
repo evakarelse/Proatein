@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva Karelse</title>
+    <link rel="stylesheet" href="../style/stylesheet.css">
+    <link rel="stylesheet" href="./loader.css">
+    <link rel="icon" href="../imgs/logo.png">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_PKWC8CcRNyAg8kc27Eat3");
+        })();
+
+    </script>
+
+
+
+    <link rel="stylesheet" href="../contactButton/contactButton.css">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="../anime.min.js"></script>
+
+
+
+</head>
+
+<body onload="AOS.init()">
+    <header>
+        <nav>
+            <div class="wrapper">
+                <a href="../index.html" id="escapeHatch">Eva Karelse<span>.</span>
+                    <span>Interaction designer</span>
+                </a>
+                <ul>
+                    <li><a href="werk.html" onmouseover="fade(this)" class="navItems" onmouseout="fadeBack()">Werk</a></li>
+                    <li><a href="../over/over.html" onmouseover="fade(this)" class="navItems" onmouseout="fadeBack()">Over</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <heading>
+        <h1>Minor project van je leven</h1>
+        <h2>Een half jaar de tijd om je eigen project te starten. </h2>
+    </heading>
+    <main>
+        <figure id="graphicDesign"></figure>
+        <aside>
+            <h3>Opdrachtgever</h3>
+            <p>Minor Project van je leven</p>
+            <h3>Casus</h3>
+            <p>Een half jaar lang werken aan je eigen project.</p>
+            <h3>datum</h3>
+            <p>September 2019</p>
+            <h3>Type</h3>
+            <p>Minor</p>
+        </aside>
+        <article>
+            <h2 data-aos="fade">Case study</h2>
+            <p data-aos="fade">Tijdens de minor Project van je leven krijg je een half jaar de tijd om te werken aan een zelfbedacht project. Mijn project is het maken van een kookboek, genaamd lievelings. Ik houd namelijk van het samenzijn en eten met mensen. Ook ben ik net uit huis en loop ik iedere avond tegen dezelfde vraag op: “wat zou ik vanavond gaan maken?” Ik wilde ook meer kennis op doen op het gebied van ontwerpen en fotograferen. Dit alle komt samen in het kookboek. 
+            </p>
+            <figure data-aos="fade"><img src="../imgs/werk_kookboek_introductie.png" alt="Foto van typographic Manual tijdschrift"></figure>
+            <figure data-aos="fade"><img src="../imgs/IMG_8637.jpg" alt="Foto van typographic Manual tijdschrift"></figure>
+            <p id="last" data-aos="fade">Mocht je meer willen zien van dit kookboek, neem contact met mij op.
+            </p>
+        </article>
+    </main>
+
+
+
+
+
+
+
+
+
+    <div id="destroyer">
+        <div class="left">
+            <a href="tel:+316297371">06 36297371</a>
+            <a href="mailto:evackarelse@gmail.com">evackarelse@gmail.com</a>
+        </div>
+        <div class="right">
+            <form action="#" autocomplete="off">
+                <input type="text" placeholder="uw naam" id="naam">
+                <input type="text" placeholder="uw emailadres" id="mailadres">
+                <textarea name="" id="bericht" cols="30" rows="10" placeholder="uw bericht"></textarea>
+                <div onclick="schluss(this), sendMail()" id="sendButton"><span id="sendButtonText">Verstuur</span></div>
+            </form>
+            <div id="schluss" onclick="schluss()"></div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="../contactButton/contactButton.js"></script>
+    <script src="../core.js"></script>
+</body>
+
+</html>
